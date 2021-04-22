@@ -84,7 +84,7 @@ int main()
 	XGpio_WriteBit(XPAR_AXI_GPIO_dut0_1_BASEADDR,0,19, 0);	//CH7
 	XGpio_WriteBit(XPAR_AXI_GPIO_dut0_1_BASEADDR,0,20, 0);	//CH5
 
-	xil_printf("FT2 start!\r\nFPGA Version:RTS5444V_ft_merge_release_bypass_3a_2021040701\r\n");
+	xil_printf("FT2 start!\r\nFPGA Version:RTS5444V_ft_merge_release_bypass_3a_2021042101\r\n");
 
 	u16 i=0;
 	u16 j=0;

@@ -60,6 +60,14 @@
 #define vmon_calib_3000mv	             0x07   //bit[1:0]=2b11 bit2 = 1b1
 #define vmon_process_done_pass	         0x3f
 #define vmon_process_done_fail	         0x1f
+#define vmon_writeefuse_600mv_min	     3
+#define vmon_writeefuse_600mv_max	     10
+#define vmon_writeefuse_1000mv_min	     9
+#define vmon_writeefuse_1000mv_max	     15
+#define vmon_writeefuse_2500mv_min	     28
+#define vmon_writeefuse_2500mv_max	     36
+#define vmon_writeefuse_3000mv_min	     35
+#define vmon_writeefuse_3000mv_max	     42
 
 //extern global statement
 

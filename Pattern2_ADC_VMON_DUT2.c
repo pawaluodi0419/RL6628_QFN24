@@ -282,6 +282,62 @@ u8 _by_Pattern2_ADCcalibration_dut2()
 
 	case 0x0007:
 	{
+		if((dut2.g_vmon_writeefuse_600mv[0]>vmon_writeefuse_600mv_min)&&(dut2.g_vmon_writeefuse_600mv[0]<vmon_writeefuse_600mv_max))
+		{
+			dut2.g_pattern_step++;
+		}
+		else
+		{
+			dut2.g_result_fail = 0x01;
+			xil_printf("dut2_g_vmon_writeefuse_600mv fail, not fit spec!\r\n");
+		}
+		break;
+	}
+
+	case 0x0008:
+	{
+		if((dut2.g_vmon_writeefuse_1000mv[0]>vmon_writeefuse_1000mv_min)&&(dut2.g_vmon_writeefuse_1000mv[0]<vmon_writeefuse_1000mv_max))
+		{
+			dut2.g_pattern_step++;
+		}
+		else
+		{
+			dut2.g_result_fail = 0x01;
+			xil_printf("dut2_g_vmon_writeefuse_1000mv fail, not fit spec!\r\n");
+		}
+		break;
+	}
+
+	case 0x0009:
+	{
+		if((dut2.g_vmon_writeefuse_2500mv[0]>vmon_writeefuse_2500mv_min)&&(dut2.g_vmon_writeefuse_2500mv[0]<vmon_writeefuse_2500mv_max))
+		{
+			dut2.g_pattern_step++;
+		}
+		else
+		{
+			dut2.g_result_fail = 0x01;
+			xil_printf("dut2_g_vmon_writeefuse_2500mv fail, not fit spec!\r\n");
+		}
+		break;
+	}
+
+	case 0x000a:
+	{
+		if((dut2.g_vmon_writeefuse_3000mv[0]>vmon_writeefuse_3000mv_min)&&(dut2.g_vmon_writeefuse_3000mv[0]<vmon_writeefuse_3000mv_max))
+		{
+			dut2.g_pattern_step++;
+		}
+		else
+		{
+			dut2.g_result_fail = 0x01;
+			xil_printf("dut2_g_vmon_writeefuse_3000mv fail, not fit spec!\r\n");
+		}
+		break;
+	}
+
+	case 0x000b:
+	{
 
 			for(i=1; i<31; i++)
 		   {
